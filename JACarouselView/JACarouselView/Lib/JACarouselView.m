@@ -49,6 +49,8 @@
 - (void)addBitImage {
     if (self.bitImage) {
         UIImageView *bitImageView = [[UIImageView alloc] initWithImage:_bitImage];
+        bitImageView.frame = self.bounds;
+        bitImageView.contentMode = UIViewContentModeScaleAspectFill;
         [self addSubview:_bitImageView = bitImageView];
     }
 }
@@ -76,6 +78,7 @@
     [super layoutSubviews];
     // 2 4
     _scrollView.frame = self.bounds;
+
     if (self.type == JACarouselTypeBanner) {
         
         _scrollView.contentSize = CGSizeMake((_cols + 2) * _scrollView.frame.size.width,_scrollView.frame.size.height);
@@ -111,6 +114,13 @@
     [super willMoveToSuperview:newSuperview];
     if (newSuperview) {
         // 1
+        if (self.bitImage == nil) {
+            NSString *imagesBundlePath = [[NSBundle mainBundle] pathForResource:@"JACarouselView" ofType:@"bundle"];
+            NSBundle *imagesBundle = [NSBundle bundleWithPath:imagesBundlePath];
+            NSString *placeHolderPath = [imagesBundle pathForResource:@"holder@2x" ofType:@"png"];
+            NSData *placeHodlerData = [NSData dataWithContentsOfURL:[NSURL fileURLWithPath:placeHolderPath]];
+            self.bitImage = [UIImage imageWithData:placeHodlerData];
+        }
         [self addBitImage];
         [self reloadData];
     }else {
@@ -120,6 +130,7 @@
 
 - (void)dealloc {
     [self stop];
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 #pragma mark - 数据刷新
@@ -149,6 +160,8 @@
         for (int i = 0; i < _cols; ++i) {
             JACarouselViewCell *cell = [self createCellWithCol:i];
             [_scrollView addSubview:cell];
+            
+            [cell addObserver:self forKeyPath:@"imageView.image" options:NSKeyValueObservingOptionNew context:NULL];
         }
         
         [self.bitImageView removeFromSuperview];
@@ -201,6 +214,15 @@
         cell.frame = frame;
     }
     
+}
+
+#pragma mark - KVO
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context {
+    if ([object valueForKeyPath:@"imageView.image"]) {
+        if (self.bitImageView) {
+            [self.bitImageView removeFromSuperview];
+        }
+    }
 }
 
 #pragma makr - UIScrollView代理

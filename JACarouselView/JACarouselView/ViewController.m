@@ -29,7 +29,6 @@
     carouselView.delegate = self;
     carouselView.timeInterval = 2.0;
     carouselView.autoPlay = true;
-    carouselView.bitImage = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://ooo.0o0.ooo/2017/06/06/59369f9f45d86.png"]]];
     [self.view addSubview:_carouselView = carouselView];
 }
 
