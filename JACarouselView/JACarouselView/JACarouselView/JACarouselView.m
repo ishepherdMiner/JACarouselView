@@ -268,11 +268,11 @@
 }
 
 - (void)allCheckerDataSource{
-    NSError *error = nil;
+    NSError *error = [[NSError alloc] init];
     if ([self checkerTarget:self.dataSource
                      action:@selector(carouselView:cellForCol:)
-                  withError:&error] == false) {
-        NSAssert(false, error.domain);
+                  withError:&error] == false) {        
+        NSLog(@"%@",error.domain);
     }
     // extra...
     
