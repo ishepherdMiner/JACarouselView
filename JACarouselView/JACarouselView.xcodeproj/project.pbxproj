@@ -8,15 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		96570E2C1EEADAC500536292 /* BannerlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96570E2B1EEADAC500536292 /* BannerlViewController.m */; };
-		96C44F061EE97E1F00C310DB /* JACarouselView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 96C44F051EE97E1F00C310DB /* JACarouselView.bundle */; };
+		96570E331EEAE77900536292 /* JACarouselView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 96570E2E1EEAE77900536292 /* JACarouselView.bundle */; };
+		96570E341EEAE77900536292 /* JACarouselView.m in Sources */ = {isa = PBXBuildFile; fileRef = 96570E301EEAE77900536292 /* JACarouselView.m */; };
+		96570E351EEAE77900536292 /* JACarouselViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 96570E321EEAE77900536292 /* JACarouselViewCell.m */; };
 		96C7599B1EE6D4FF00941C8D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C7599A1EE6D4FF00941C8D /* main.m */; };
 		96C7599E1EE6D4FF00941C8D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C7599D1EE6D4FF00941C8D /* AppDelegate.m */; };
 		96C759A11EE6D4FF00941C8D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C759A01EE6D4FF00941C8D /* ViewController.m */; };
 		96C759A41EE6D4FF00941C8D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96C759A21EE6D4FF00941C8D /* Main.storyboard */; };
 		96C759A61EE6D4FF00941C8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96C759A51EE6D4FF00941C8D /* Assets.xcassets */; };
 		96C759A91EE6D4FF00941C8D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96C759A71EE6D4FF00941C8D /* LaunchScreen.storyboard */; };
-		96C759BC1EE6D52900941C8D /* JACarouselView.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C759B91EE6D52900941C8D /* JACarouselView.m */; };
-		96C759BD1EE6D52900941C8D /* JACarouselViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C759BB1EE6D52900941C8D /* JACarouselViewCell.m */; };
 		96C759E91EE6D80800941C8D /* MKAnnotationView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C759C31EE6D80800941C8D /* MKAnnotationView+WebCache.m */; };
 		96C759EA1EE6D80800941C8D /* NSData+ImageContentType.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C759C51EE6D80800941C8D /* NSData+ImageContentType.m */; };
 		96C759EB1EE6D80800941C8D /* NSImage+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C759C71EE6D80800941C8D /* NSImage+WebCache.m */; };
@@ -41,7 +41,11 @@
 /* Begin PBXFileReference section */
 		96570E2A1EEADAC500536292 /* BannerlViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BannerlViewController.h; sourceTree = "<group>"; };
 		96570E2B1EEADAC500536292 /* BannerlViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BannerlViewController.m; sourceTree = "<group>"; };
-		96C44F051EE97E1F00C310DB /* JACarouselView.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = JACarouselView.bundle; sourceTree = "<group>"; };
+		96570E2E1EEAE77900536292 /* JACarouselView.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = JACarouselView.bundle; sourceTree = "<group>"; };
+		96570E2F1EEAE77900536292 /* JACarouselView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JACarouselView.h; sourceTree = "<group>"; };
+		96570E301EEAE77900536292 /* JACarouselView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JACarouselView.m; sourceTree = "<group>"; };
+		96570E311EEAE77900536292 /* JACarouselViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JACarouselViewCell.h; sourceTree = "<group>"; };
+		96570E321EEAE77900536292 /* JACarouselViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JACarouselViewCell.m; sourceTree = "<group>"; };
 		96C759961EE6D4FF00941C8D /* JACarouselView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JACarouselView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96C7599A1EE6D4FF00941C8D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		96C7599C1EE6D4FF00941C8D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -52,10 +56,6 @@
 		96C759A51EE6D4FF00941C8D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		96C759A81EE6D4FF00941C8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		96C759AA1EE6D4FF00941C8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		96C759B81EE6D52900941C8D /* JACarouselView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JACarouselView.h; sourceTree = "<group>"; };
-		96C759B91EE6D52900941C8D /* JACarouselView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JACarouselView.m; sourceTree = "<group>"; };
-		96C759BA1EE6D52900941C8D /* JACarouselViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JACarouselViewCell.h; sourceTree = "<group>"; };
-		96C759BB1EE6D52900941C8D /* JACarouselViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JACarouselViewCell.m; sourceTree = "<group>"; };
 		96C759C21EE6D80800941C8D /* MKAnnotationView+WebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MKAnnotationView+WebCache.h"; sourceTree = "<group>"; };
 		96C759C31EE6D80800941C8D /* MKAnnotationView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MKAnnotationView+WebCache.m"; sourceTree = "<group>"; };
 		96C759C41EE6D80800941C8D /* NSData+ImageContentType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+ImageContentType.h"; sourceTree = "<group>"; };
@@ -108,6 +108,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		96570E2D1EEAE77900536292 /* JACarouselView */ = {
+			isa = PBXGroup;
+			children = (
+				96570E2E1EEAE77900536292 /* JACarouselView.bundle */,
+				96570E2F1EEAE77900536292 /* JACarouselView.h */,
+				96570E301EEAE77900536292 /* JACarouselView.m */,
+				96570E311EEAE77900536292 /* JACarouselViewCell.h */,
+				96570E321EEAE77900536292 /* JACarouselViewCell.m */,
+			);
+			path = JACarouselView;
+			sourceTree = "<group>";
+		};
+		96570E361EEAE78000536292 /* Banner */ = {
+			isa = PBXGroup;
+			children = (
+				96570E2A1EEADAC500536292 /* BannerlViewController.h */,
+				96570E2B1EEADAC500536292 /* BannerlViewController.m */,
+			);
+			name = Banner;
+			sourceTree = "<group>";
+		};
 		96C7598D1EE6D4FF00941C8D = {
 			isa = PBXGroup;
 			children = (
@@ -127,17 +148,16 @@
 		96C759981EE6D4FF00941C8D /* JACarouselView */ = {
 			isa = PBXGroup;
 			children = (
+				96570E361EEAE78000536292 /* Banner */,
 				96C7599C1EE6D4FF00941C8D /* AppDelegate.h */,
 				96C7599D1EE6D4FF00941C8D /* AppDelegate.m */,
 				96C7599F1EE6D4FF00941C8D /* ViewController.h */,
 				96C759A01EE6D4FF00941C8D /* ViewController.m */,
-				96570E2A1EEADAC500536292 /* BannerlViewController.h */,
-				96570E2B1EEADAC500536292 /* BannerlViewController.m */,
 				96C759A21EE6D4FF00941C8D /* Main.storyboard */,
 				96C759A51EE6D4FF00941C8D /* Assets.xcassets */,
 				96C759A71EE6D4FF00941C8D /* LaunchScreen.storyboard */,
 				96C759AA1EE6D4FF00941C8D /* Info.plist */,
-				96C759B71EE6D52900941C8D /* Lib */,
+				96570E2D1EEAE77900536292 /* JACarouselView */,
 				96C759C01EE6D80800941C8D /* SDWebImage */,
 				96C759991EE6D4FF00941C8D /* Supporting Files */,
 			);
@@ -150,18 +170,6 @@
 				96C7599A1EE6D4FF00941C8D /* main.m */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		96C759B71EE6D52900941C8D /* Lib */ = {
-			isa = PBXGroup;
-			children = (
-				96C759B81EE6D52900941C8D /* JACarouselView.h */,
-				96C759B91EE6D52900941C8D /* JACarouselView.m */,
-				96C759BA1EE6D52900941C8D /* JACarouselViewCell.h */,
-				96C759BB1EE6D52900941C8D /* JACarouselViewCell.m */,
-				96C44F051EE97E1F00C310DB /* JACarouselView.bundle */,
-			);
-			path = Lib;
 			sourceTree = "<group>";
 		};
 		96C759C01EE6D80800941C8D /* SDWebImage */ = {
@@ -278,7 +286,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				96C759A91EE6D4FF00941C8D /* LaunchScreen.storyboard in Resources */,
-				96C44F061EE97E1F00C310DB /* JACarouselView.bundle in Resources */,
+				96570E331EEAE77900536292 /* JACarouselView.bundle in Resources */,
 				96C759A61EE6D4FF00941C8D /* Assets.xcassets in Resources */,
 				96C759A41EE6D4FF00941C8D /* Main.storyboard in Resources */,
 			);
@@ -305,14 +313,14 @@
 				96C759FA1EE6D80800941C8D /* UIView+WebCache.m in Sources */,
 				96C759F11EE6D80800941C8D /* SDWebImageDownloaderOperation.m in Sources */,
 				96C759EF1EE6D80800941C8D /* SDWebImageDecoder.m in Sources */,
+				96570E351EEAE77900536292 /* JACarouselViewCell.m in Sources */,
 				96C7599B1EE6D4FF00941C8D /* main.m in Sources */,
+				96570E341EEAE77900536292 /* JACarouselView.m in Sources */,
 				96C759F81EE6D80800941C8D /* UIImageView+HighlightedWebCache.m in Sources */,
-				96C759BC1EE6D52900941C8D /* JACarouselView.m in Sources */,
 				96C759F01EE6D80800941C8D /* SDWebImageDownloader.m in Sources */,
 				96570E2C1EEADAC500536292 /* BannerlViewController.m in Sources */,
 				96C759ED1EE6D80800941C8D /* SDImageCacheConfig.m in Sources */,
 				96C759EA1EE6D80800941C8D /* NSData+ImageContentType.m in Sources */,
-				96C759BD1EE6D52900941C8D /* JACarouselViewCell.m in Sources */,
 				96C759F21EE6D80800941C8D /* SDWebImageManager.m in Sources */,
 				96C759EB1EE6D80800941C8D /* NSImage+WebCache.m in Sources */,
 				96C759E91EE6D80800941C8D /* MKAnnotationView+WebCache.m in Sources */,
