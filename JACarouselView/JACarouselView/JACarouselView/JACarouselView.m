@@ -268,23 +268,9 @@
 }
 
 - (void)allCheckerDataSource{
-    NSError *error = [[NSError alloc] init];
-    if ([self checkerTarget:self.dataSource
-                     action:@selector(carouselView:cellForCol:)
-                  withError:&error] == false) {        
-        NSLog(@"%@",error.domain);
+    if (![self.dataSource respondsToSelector:@selector(carouselView:cellForCol:)]) {
+        NSAssert(false, [NSString stringWithFormat:@"You must implement the carouselView:cellForCol: function"]);
     }
-    // extra...
-    
-}
-
-- (BOOL)checkerTarget:(id)obj
-               action:(SEL)sel
-            withError:(NSError **)err{
-    *err = [NSError errorWithDomain:[NSString stringWithFormat:@"You must implement the %p function",sel]
-                               code:-99
-                           userInfo:@{}];
-    return [self.dataSource respondsToSelector:sel];
 }
 
 - (void)willMoveToCol {
