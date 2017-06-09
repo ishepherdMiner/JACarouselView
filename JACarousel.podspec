@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/ishepherdMiner/JACarousel.git", :tag => "#{s.version}" }
   s.source_files = "JACarousel", "JACarousel/**/*.{h,m}"  
 
-  s.public_header_files = "JAProgressBar/**/*.h"
+  s.public_header_files = "JACarousel/**/*.h"
   s.frameworks   = "UIKit", "QuartzCore","Foundation"
   s.requires_arc = true
   s.module_name  = "JACarousel"

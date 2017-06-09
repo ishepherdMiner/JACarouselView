@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		96570E2C1EEADAC500536292 /* BannerlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96570E2B1EEADAC500536292 /* BannerlViewController.m */; };
 		96C44F061EE97E1F00C310DB /* JACarouselView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 96C44F051EE97E1F00C310DB /* JACarouselView.bundle */; };
 		96C7599B1EE6D4FF00941C8D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C7599A1EE6D4FF00941C8D /* main.m */; };
 		96C7599E1EE6D4FF00941C8D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C7599D1EE6D4FF00941C8D /* AppDelegate.m */; };
@@ -38,6 +39,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		96570E2A1EEADAC500536292 /* BannerlViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BannerlViewController.h; sourceTree = "<group>"; };
+		96570E2B1EEADAC500536292 /* BannerlViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BannerlViewController.m; sourceTree = "<group>"; };
 		96C44F051EE97E1F00C310DB /* JACarouselView.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = JACarouselView.bundle; sourceTree = "<group>"; };
 		96C759961EE6D4FF00941C8D /* JACarouselView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JACarouselView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96C7599A1EE6D4FF00941C8D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -124,15 +127,17 @@
 		96C759981EE6D4FF00941C8D /* JACarouselView */ = {
 			isa = PBXGroup;
 			children = (
-				96C759B71EE6D52900941C8D /* Lib */,
 				96C7599C1EE6D4FF00941C8D /* AppDelegate.h */,
 				96C7599D1EE6D4FF00941C8D /* AppDelegate.m */,
 				96C7599F1EE6D4FF00941C8D /* ViewController.h */,
 				96C759A01EE6D4FF00941C8D /* ViewController.m */,
+				96570E2A1EEADAC500536292 /* BannerlViewController.h */,
+				96570E2B1EEADAC500536292 /* BannerlViewController.m */,
 				96C759A21EE6D4FF00941C8D /* Main.storyboard */,
 				96C759A51EE6D4FF00941C8D /* Assets.xcassets */,
 				96C759A71EE6D4FF00941C8D /* LaunchScreen.storyboard */,
 				96C759AA1EE6D4FF00941C8D /* Info.plist */,
+				96C759B71EE6D52900941C8D /* Lib */,
 				96C759C01EE6D80800941C8D /* SDWebImage */,
 				96C759991EE6D4FF00941C8D /* Supporting Files */,
 			);
@@ -304,6 +309,7 @@
 				96C759F81EE6D80800941C8D /* UIImageView+HighlightedWebCache.m in Sources */,
 				96C759BC1EE6D52900941C8D /* JACarouselView.m in Sources */,
 				96C759F01EE6D80800941C8D /* SDWebImageDownloader.m in Sources */,
+				96570E2C1EEADAC500536292 /* BannerlViewController.m in Sources */,
 				96C759ED1EE6D80800941C8D /* SDImageCacheConfig.m in Sources */,
 				96C759EA1EE6D80800941C8D /* NSData+ImageContentType.m in Sources */,
 				96C759BD1EE6D52900941C8D /* JACarouselViewCell.m in Sources */,
