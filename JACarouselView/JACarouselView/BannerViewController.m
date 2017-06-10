@@ -6,19 +6,19 @@
 //  Copyright © 2017 Jason. All rights reserved.
 //
 
-#import "BannerlViewController.h"
+#import "BannerViewController.h"
 #import "JACarouselView.h"
 #import "JACarouselViewCell.h"
 #import "UIImageView+WebCache.h"
 
-@interface BannerlViewController () <JACarouselDelegate,JACarouselDatasource>
+@interface BannerViewController () <JACarouselDelegate,JACarouselDatasource>
 
 @property (nonatomic,weak) JACarouselView *carouselView;
 @property (nonatomic,strong) NSArray *dataList;
 
 @end
 
-@implementation BannerlViewController
+@implementation BannerViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

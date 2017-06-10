@@ -7,10 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		96570E2C1EEADAC500536292 /* BannerlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96570E2B1EEADAC500536292 /* BannerlViewController.m */; };
+		96570E2C1EEADAC500536292 /* BannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96570E2B1EEADAC500536292 /* BannerViewController.m */; };
 		96570E331EEAE77900536292 /* JACarouselView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 96570E2E1EEAE77900536292 /* JACarouselView.bundle */; };
 		96570E341EEAE77900536292 /* JACarouselView.m in Sources */ = {isa = PBXBuildFile; fileRef = 96570E301EEAE77900536292 /* JACarouselView.m */; };
 		96570E351EEAE77900536292 /* JACarouselViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 96570E321EEAE77900536292 /* JACarouselViewCell.m */; };
+		9660B61A1EEC379800008608 /* GuideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9660B6191EEC379800008608 /* GuideViewController.m */; };
 		96C7599B1EE6D4FF00941C8D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C7599A1EE6D4FF00941C8D /* main.m */; };
 		96C7599E1EE6D4FF00941C8D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C7599D1EE6D4FF00941C8D /* AppDelegate.m */; };
 		96C759A11EE6D4FF00941C8D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C759A01EE6D4FF00941C8D /* ViewController.m */; };
@@ -39,13 +40,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		96570E2A1EEADAC500536292 /* BannerlViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BannerlViewController.h; sourceTree = "<group>"; };
-		96570E2B1EEADAC500536292 /* BannerlViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BannerlViewController.m; sourceTree = "<group>"; };
+		96570E2A1EEADAC500536292 /* BannerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BannerViewController.h; sourceTree = "<group>"; };
+		96570E2B1EEADAC500536292 /* BannerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BannerViewController.m; sourceTree = "<group>"; };
 		96570E2E1EEAE77900536292 /* JACarouselView.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = JACarouselView.bundle; sourceTree = "<group>"; };
 		96570E2F1EEAE77900536292 /* JACarouselView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JACarouselView.h; sourceTree = "<group>"; };
 		96570E301EEAE77900536292 /* JACarouselView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JACarouselView.m; sourceTree = "<group>"; };
 		96570E311EEAE77900536292 /* JACarouselViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JACarouselViewCell.h; sourceTree = "<group>"; };
 		96570E321EEAE77900536292 /* JACarouselViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JACarouselViewCell.m; sourceTree = "<group>"; };
+		9660B6181EEC379800008608 /* GuideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuideViewController.h; sourceTree = "<group>"; };
+		9660B6191EEC379800008608 /* GuideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuideViewController.m; sourceTree = "<group>"; };
 		96C759961EE6D4FF00941C8D /* JACarouselView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JACarouselView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96C7599A1EE6D4FF00941C8D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		96C7599C1EE6D4FF00941C8D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -123,10 +126,19 @@
 		96570E361EEAE78000536292 /* Banner */ = {
 			isa = PBXGroup;
 			children = (
-				96570E2A1EEADAC500536292 /* BannerlViewController.h */,
-				96570E2B1EEADAC500536292 /* BannerlViewController.m */,
+				96570E2A1EEADAC500536292 /* BannerViewController.h */,
+				96570E2B1EEADAC500536292 /* BannerViewController.m */,
 			);
 			name = Banner;
+			sourceTree = "<group>";
+		};
+		9660B6171EEC376600008608 /* Guide */ = {
+			isa = PBXGroup;
+			children = (
+				9660B6181EEC379800008608 /* GuideViewController.h */,
+				9660B6191EEC379800008608 /* GuideViewController.m */,
+			);
+			name = Guide;
 			sourceTree = "<group>";
 		};
 		96C7598D1EE6D4FF00941C8D = {
@@ -148,6 +160,7 @@
 		96C759981EE6D4FF00941C8D /* JACarouselView */ = {
 			isa = PBXGroup;
 			children = (
+				9660B6171EEC376600008608 /* Guide */,
 				96570E361EEAE78000536292 /* Banner */,
 				96C7599C1EE6D4FF00941C8D /* AppDelegate.h */,
 				96C7599D1EE6D4FF00941C8D /* AppDelegate.m */,
@@ -318,10 +331,11 @@
 				96570E341EEAE77900536292 /* JACarouselView.m in Sources */,
 				96C759F81EE6D80800941C8D /* UIImageView+HighlightedWebCache.m in Sources */,
 				96C759F01EE6D80800941C8D /* SDWebImageDownloader.m in Sources */,
-				96570E2C1EEADAC500536292 /* BannerlViewController.m in Sources */,
+				96570E2C1EEADAC500536292 /* BannerViewController.m in Sources */,
 				96C759ED1EE6D80800941C8D /* SDImageCacheConfig.m in Sources */,
 				96C759EA1EE6D80800941C8D /* NSData+ImageContentType.m in Sources */,
 				96C759F21EE6D80800941C8D /* SDWebImageManager.m in Sources */,
+				9660B61A1EEC379800008608 /* GuideViewController.m in Sources */,
 				96C759EB1EE6D80800941C8D /* NSImage+WebCache.m in Sources */,
 				96C759E91EE6D80800941C8D /* MKAnnotationView+WebCache.m in Sources */,
 			);

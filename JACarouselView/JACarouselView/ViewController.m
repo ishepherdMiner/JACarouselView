@@ -10,7 +10,8 @@
 #import "JACarouselView.h"
 #import "JACarouselViewCell.h"
 #import "UIImageView+WebCache.h"
-#import "BannerlViewController.h"
+#import "BannerViewController.h"
+#import "GuideViewController.h"
 
 @interface ViewController () <UITableViewDataSource,UITableViewDelegate>
 
@@ -25,7 +26,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.datas = @[@"Banner"];
+    self.datas = @[@"Banner",@"Guide"];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -53,7 +54,15 @@
     switch (indexPath.row) {
         case 0:
         {
-            BannerlViewController *vc = [[BannerlViewController alloc] init];
+            BannerViewController *vc = [[BannerViewController alloc] init];
+            vc.title = self.datas[indexPath.row];
+            [self.navigationController pushViewController:vc animated:true];
+        }
+            break;
+        case 1:
+        {
+            GuideViewController *vc = [[GuideViewController alloc] init];
+            vc.title = self.datas[indexPath.row];
             [self.navigationController pushViewController:vc animated:true];
         }
             break;
