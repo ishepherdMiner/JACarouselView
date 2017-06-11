@@ -114,7 +114,7 @@
     [super willMoveToSuperview:newSuperview];
     if (newSuperview) {
         // 1
-        if (self.bitImage == nil) {
+        if (self.bitImage == nil && self.type != JACarouselTypeGuide) {
             NSString *imagesBundlePath = [[NSBundle mainBundle] pathForResource:@"JACarouselView" ofType:@"bundle"];
             NSBundle *imagesBundle = [NSBundle bundleWithPath:imagesBundlePath];
             NSString *placeHolderPath = [imagesBundle pathForResource:@"holder@2x" ofType:@"png"];

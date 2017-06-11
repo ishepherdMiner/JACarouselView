@@ -12,6 +12,12 @@
 		96570E341EEAE77900536292 /* JACarouselView.m in Sources */ = {isa = PBXBuildFile; fileRef = 96570E301EEAE77900536292 /* JACarouselView.m */; };
 		96570E351EEAE77900536292 /* JACarouselViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 96570E321EEAE77900536292 /* JACarouselViewCell.m */; };
 		9660B61A1EEC379800008608 /* GuideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9660B6191EEC379800008608 /* GuideViewController.m */; };
+		9660B7721EED8D9B00008608 /* 4_welcome1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9660B76C1EED8D9A00008608 /* 4_welcome1@2x.png */; };
+		9660B7731EED8D9B00008608 /* 4_welcome2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9660B76D1EED8D9A00008608 /* 4_welcome2@2x.png */; };
+		9660B7741EED8D9B00008608 /* 4_welcome3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9660B76E1EED8D9A00008608 /* 4_welcome3@2x.png */; };
+		9660B7751EED8D9B00008608 /* 6_welcome1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9660B76F1EED8D9A00008608 /* 6_welcome1@2x.png */; };
+		9660B7761EED8D9B00008608 /* 6_welcome2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9660B7701EED8D9A00008608 /* 6_welcome2@2x.png */; };
+		9660B7771EED8D9B00008608 /* 6_welcome3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9660B7711EED8D9A00008608 /* 6_welcome3@2x.png */; };
 		96C7599B1EE6D4FF00941C8D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C7599A1EE6D4FF00941C8D /* main.m */; };
 		96C7599E1EE6D4FF00941C8D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C7599D1EE6D4FF00941C8D /* AppDelegate.m */; };
 		96C759A11EE6D4FF00941C8D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C759A01EE6D4FF00941C8D /* ViewController.m */; };
@@ -49,6 +55,12 @@
 		96570E321EEAE77900536292 /* JACarouselViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JACarouselViewCell.m; sourceTree = "<group>"; };
 		9660B6181EEC379800008608 /* GuideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuideViewController.h; sourceTree = "<group>"; };
 		9660B6191EEC379800008608 /* GuideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuideViewController.m; sourceTree = "<group>"; };
+		9660B76C1EED8D9A00008608 /* 4_welcome1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "4_welcome1@2x.png"; sourceTree = "<group>"; };
+		9660B76D1EED8D9A00008608 /* 4_welcome2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "4_welcome2@2x.png"; sourceTree = "<group>"; };
+		9660B76E1EED8D9A00008608 /* 4_welcome3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "4_welcome3@2x.png"; sourceTree = "<group>"; };
+		9660B76F1EED8D9A00008608 /* 6_welcome1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "6_welcome1@2x.png"; sourceTree = "<group>"; };
+		9660B7701EED8D9A00008608 /* 6_welcome2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "6_welcome2@2x.png"; sourceTree = "<group>"; };
+		9660B7711EED8D9A00008608 /* 6_welcome3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "6_welcome3@2x.png"; sourceTree = "<group>"; };
 		96C759961EE6D4FF00941C8D /* JACarouselView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JACarouselView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96C7599A1EE6D4FF00941C8D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		96C7599C1EE6D4FF00941C8D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -166,6 +178,12 @@
 				96C7599D1EE6D4FF00941C8D /* AppDelegate.m */,
 				96C7599F1EE6D4FF00941C8D /* ViewController.h */,
 				96C759A01EE6D4FF00941C8D /* ViewController.m */,
+				9660B76C1EED8D9A00008608 /* 4_welcome1@2x.png */,
+				9660B76D1EED8D9A00008608 /* 4_welcome2@2x.png */,
+				9660B76E1EED8D9A00008608 /* 4_welcome3@2x.png */,
+				9660B76F1EED8D9A00008608 /* 6_welcome1@2x.png */,
+				9660B7701EED8D9A00008608 /* 6_welcome2@2x.png */,
+				9660B7711EED8D9A00008608 /* 6_welcome3@2x.png */,
 				96C759A21EE6D4FF00941C8D /* Main.storyboard */,
 				96C759A51EE6D4FF00941C8D /* Assets.xcassets */,
 				96C759A71EE6D4FF00941C8D /* LaunchScreen.storyboard */,
@@ -298,9 +316,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9660B7771EED8D9B00008608 /* 6_welcome3@2x.png in Resources */,
+				9660B7751EED8D9B00008608 /* 6_welcome1@2x.png in Resources */,
+				9660B7741EED8D9B00008608 /* 4_welcome3@2x.png in Resources */,
 				96C759A91EE6D4FF00941C8D /* LaunchScreen.storyboard in Resources */,
+				9660B7731EED8D9B00008608 /* 4_welcome2@2x.png in Resources */,
 				96570E331EEAE77900536292 /* JACarouselView.bundle in Resources */,
 				96C759A61EE6D4FF00941C8D /* Assets.xcassets in Resources */,
+				9660B7761EED8D9B00008608 /* 6_welcome2@2x.png in Resources */,
+				9660B7721EED8D9B00008608 /* 4_welcome1@2x.png in Resources */,
 				96C759A41EE6D4FF00941C8D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
