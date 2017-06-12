@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "JACarouselView"
-  s.version      = "0.0.3"
+  s.version      = "0.0.4"
   s.summary      = "An easy-to-use carousel"
   s.description  = <<-DESC
   An easy-to-use carousel.You can use like UITableView
@@ -11,9 +11,9 @@ Pod::Spec.new do |s|
   s.author       = { "Jason" => "iJason92@yahoo.com" }
   s.platform     = :ios, "7.0"
   s.source       = { :git => "https://github.com/ishepherdMiner/JACarouselView.git", :tag => "#{s.version}" }
-  s.source_files = "JACarouselView", "JACarouselView/**/*.{h,m}"  
-
-  s.public_header_files = "JACarouselView/**/*.h"
+  s.source_files = "JACarouselView", "JACarouselView/JACarouselView/JACarouselView/**/.{h,m}"  
+ 
+  s.public_header_files = "JACarouselView/JACarouselView/JACarouselView/**/*.h"
   s.frameworks   = "UIKit", "QuartzCore","Foundation"
   s.requires_arc = true
   s.module_name  = "JACarouselView"
