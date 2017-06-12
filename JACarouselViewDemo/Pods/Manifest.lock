@@ -1,0 +1,21 @@
+PODS:
+  - JACarouselView (0.0.4)
+  - SDWebImage (4.0.0):
+    - SDWebImage/Core (= 4.0.0)
+  - SDWebImage/Core (4.0.0)
+
+DEPENDENCIES:
+  - JACarouselView (from `../`)
+  - SDWebImage (~> 4.0.0)
+
+EXTERNAL SOURCES:
+  JACarouselView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  JACarouselView: 722dc3d2047ac15b51579df7fef7cc1a04e4e595
+  SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
+
+PODFILE CHECKSUM: fb06af09a18eba160156dc8809d871c6bd333790
+
+COCOAPODS: 1.2.1
