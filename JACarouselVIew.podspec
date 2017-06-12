@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "JACarouselView"
-  s.version      = "0.0.4"
+  s.version      = "0.0.5"
   s.summary      = "An easy-to-use carousel"
   s.description  = <<-DESC
   An easy-to-use carousel.You can use like UITableView
