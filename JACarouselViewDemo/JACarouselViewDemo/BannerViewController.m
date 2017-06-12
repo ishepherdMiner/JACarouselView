@@ -7,9 +7,9 @@
 //
 
 #import "BannerViewController.h"
-#import "JACarouselView.h"
-#import "JACarouselViewCell.h"
-#import "UIImageView+WebCache.h"
+#import <JACarouselView.h>
+#import <JACarouselViewCell.h>
+#import <UIImageView+WebCache.h>
 
 @interface BannerViewController () <JACarouselDelegate,JACarouselDatasource>
 
@@ -27,7 +27,6 @@
     JACarouselView *carouselView = [[JACarouselView alloc] initWithFrame:CGRectMake(0, 64, [UIScreen mainScreen].bounds.size.width, 160)];
     carouselView.dataSource = self;
     carouselView.delegate = self;
-    carouselView.timeInterval = 2.0;
     carouselView.autoPlay = true;
     [self.view addSubview:_carouselView = carouselView];
 }

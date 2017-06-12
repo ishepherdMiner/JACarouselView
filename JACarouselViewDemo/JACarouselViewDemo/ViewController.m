@@ -9,7 +9,6 @@
 #import "ViewController.h"
 #import "JACarouselView.h"
 #import "JACarouselViewCell.h"
-#import "UIImageView+WebCache.h"
 #import "BannerViewController.h"
 #import "GuideViewController.h"
 

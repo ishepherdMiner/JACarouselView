@@ -1,0 +1,443 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9667C2721EEEDF5F00A46BCB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9667C2711EEEDF5F00A46BCB /* main.m */; };
+		9667C2751EEEDF5F00A46BCB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9667C2741EEEDF5F00A46BCB /* AppDelegate.m */; };
+		9667C2781EEEDF5F00A46BCB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9667C2771EEEDF5F00A46BCB /* ViewController.m */; };
+		9667C27D1EEEDF5F00A46BCB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9667C27C1EEEDF5F00A46BCB /* Assets.xcassets */; };
+		9667C2801EEEDF5F00A46BCB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9667C27E1EEEDF5F00A46BCB /* LaunchScreen.storyboard */; };
+		9667C28D1EEEE01800A46BCB /* 4_welcome1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9667C2871EEEE01800A46BCB /* 4_welcome1@2x.png */; };
+		9667C28E1EEEE01800A46BCB /* 4_welcome2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9667C2881EEEE01800A46BCB /* 4_welcome2@2x.png */; };
+		9667C28F1EEEE01800A46BCB /* 4_welcome3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9667C2891EEEE01800A46BCB /* 4_welcome3@2x.png */; };
+		9667C2901EEEE01800A46BCB /* 6_welcome1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9667C28A1EEEE01800A46BCB /* 6_welcome1@2x.png */; };
+		9667C2911EEEE01800A46BCB /* 6_welcome2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9667C28B1EEEE01800A46BCB /* 6_welcome2@2x.png */; };
+		9667C2921EEEE01800A46BCB /* 6_welcome3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9667C28C1EEEE01800A46BCB /* 6_welcome3@2x.png */; };
+		9667C2971EEEE02F00A46BCB /* BannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9667C2961EEEE02F00A46BCB /* BannerViewController.m */; };
+		9667C29A1EEEE03600A46BCB /* GuideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9667C2991EEEE03600A46BCB /* GuideViewController.m */; };
+		9667C29C1EEEE07D00A46BCB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9667C29B1EEEE07D00A46BCB /* Main.storyboard */; };
+		E5B50D458DE1AA4E3430D6CB /* libPods-JACarouselViewDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F064126E7FAB153E9DA0EF97 /* libPods-JACarouselViewDemo.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		53307E085D43AFCD916ACE62 /* Pods-JACarouselViewDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JACarouselViewDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JACarouselViewDemo/Pods-JACarouselViewDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		9667C26D1EEEDF5F00A46BCB /* JACarouselViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JACarouselViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9667C2711EEEDF5F00A46BCB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9667C2731EEEDF5F00A46BCB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9667C2741EEEDF5F00A46BCB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9667C2761EEEDF5F00A46BCB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		9667C2771EEEDF5F00A46BCB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		9667C27C1EEEDF5F00A46BCB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9667C27F1EEEDF5F00A46BCB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9667C2811EEEDF5F00A46BCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9667C2871EEEE01800A46BCB /* 4_welcome1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "4_welcome1@2x.png"; sourceTree = "<group>"; };
+		9667C2881EEEE01800A46BCB /* 4_welcome2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "4_welcome2@2x.png"; sourceTree = "<group>"; };
+		9667C2891EEEE01800A46BCB /* 4_welcome3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "4_welcome3@2x.png"; sourceTree = "<group>"; };
+		9667C28A1EEEE01800A46BCB /* 6_welcome1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "6_welcome1@2x.png"; sourceTree = "<group>"; };
+		9667C28B1EEEE01800A46BCB /* 6_welcome2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "6_welcome2@2x.png"; sourceTree = "<group>"; };
+		9667C28C1EEEE01800A46BCB /* 6_welcome3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "6_welcome3@2x.png"; sourceTree = "<group>"; };
+		9667C2951EEEE02F00A46BCB /* BannerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BannerViewController.h; sourceTree = "<group>"; };
+		9667C2961EEEE02F00A46BCB /* BannerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BannerViewController.m; sourceTree = "<group>"; };
+		9667C2981EEEE03600A46BCB /* GuideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuideViewController.h; sourceTree = "<group>"; };
+		9667C2991EEEE03600A46BCB /* GuideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuideViewController.m; sourceTree = "<group>"; };
+		9667C29B1EEEE07D00A46BCB /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		BEB2D274F118ABED13F42191 /* Pods-JACarouselViewDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JACarouselViewDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-JACarouselViewDemo/Pods-JACarouselViewDemo.release.xcconfig"; sourceTree = "<group>"; };
+		F064126E7FAB153E9DA0EF97 /* libPods-JACarouselViewDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JACarouselViewDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9667C26A1EEEDF5F00A46BCB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5B50D458DE1AA4E3430D6CB /* libPods-JACarouselViewDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0AAE680B1864CE0FB0EDD7FF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F064126E7FAB153E9DA0EF97 /* libPods-JACarouselViewDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		262FBC5FDC1E414E8180A3B8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				53307E085D43AFCD916ACE62 /* Pods-JACarouselViewDemo.debug.xcconfig */,
+				BEB2D274F118ABED13F42191 /* Pods-JACarouselViewDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9667C2641EEEDF5F00A46BCB = {
+			isa = PBXGroup;
+			children = (
+				9667C26F1EEEDF5F00A46BCB /* JACarouselViewDemo */,
+				9667C26E1EEEDF5F00A46BCB /* Products */,
+				262FBC5FDC1E414E8180A3B8 /* Pods */,
+				0AAE680B1864CE0FB0EDD7FF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9667C26E1EEEDF5F00A46BCB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9667C26D1EEEDF5F00A46BCB /* JACarouselViewDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9667C26F1EEEDF5F00A46BCB /* JACarouselViewDemo */ = {
+			isa = PBXGroup;
+			children = (
+				9667C2941EEEE02600A46BCB /* Guide */,
+				9667C2931EEEE02300A46BCB /* Banner */,
+				9667C2731EEEDF5F00A46BCB /* AppDelegate.h */,
+				9667C2741EEEDF5F00A46BCB /* AppDelegate.m */,
+				9667C2761EEEDF5F00A46BCB /* ViewController.h */,
+				9667C2771EEEDF5F00A46BCB /* ViewController.m */,
+				9667C29B1EEEE07D00A46BCB /* Main.storyboard */,
+				9667C27C1EEEDF5F00A46BCB /* Assets.xcassets */,
+				9667C27E1EEEDF5F00A46BCB /* LaunchScreen.storyboard */,
+				9667C2811EEEDF5F00A46BCB /* Info.plist */,
+				9667C2871EEEE01800A46BCB /* 4_welcome1@2x.png */,
+				9667C2881EEEE01800A46BCB /* 4_welcome2@2x.png */,
+				9667C2891EEEE01800A46BCB /* 4_welcome3@2x.png */,
+				9667C28A1EEEE01800A46BCB /* 6_welcome1@2x.png */,
+				9667C28B1EEEE01800A46BCB /* 6_welcome2@2x.png */,
+				9667C28C1EEEE01800A46BCB /* 6_welcome3@2x.png */,
+				9667C2701EEEDF5F00A46BCB /* Supporting Files */,
+			);
+			path = JACarouselViewDemo;
+			sourceTree = "<group>";
+		};
+		9667C2701EEEDF5F00A46BCB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9667C2711EEEDF5F00A46BCB /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9667C2931EEEE02300A46BCB /* Banner */ = {
+			isa = PBXGroup;
+			children = (
+				9667C2951EEEE02F00A46BCB /* BannerViewController.h */,
+				9667C2961EEEE02F00A46BCB /* BannerViewController.m */,
+			);
+			name = Banner;
+			sourceTree = "<group>";
+		};
+		9667C2941EEEE02600A46BCB /* Guide */ = {
+			isa = PBXGroup;
+			children = (
+				9667C2981EEEE03600A46BCB /* GuideViewController.h */,
+				9667C2991EEEE03600A46BCB /* GuideViewController.m */,
+			);
+			name = Guide;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9667C26C1EEEDF5F00A46BCB /* JACarouselViewDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9667C2841EEEDF5F00A46BCB /* Build configuration list for PBXNativeTarget "JACarouselViewDemo" */;
+			buildPhases = (
+				627F97845B2E42D013C6FBF4 /* [CP] Check Pods Manifest.lock */,
+				9667C2691EEEDF5F00A46BCB /* Sources */,
+				9667C26A1EEEDF5F00A46BCB /* Frameworks */,
+				9667C26B1EEEDF5F00A46BCB /* Resources */,
+				3A0412605A6DEEFBEAC1D005 /* [CP] Embed Pods Frameworks */,
+				C4F2E7EA31EEFA6A0ED00158 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JACarouselViewDemo;
+			productName = JACarouselViewDemo;
+			productReference = 9667C26D1EEEDF5F00A46BCB /* JACarouselViewDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9667C2651EEEDF5F00A46BCB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = Jason;
+				TargetAttributes = {
+					9667C26C1EEEDF5F00A46BCB = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = ZEY359R7A4;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 9667C2681EEEDF5F00A46BCB /* Build configuration list for PBXProject "JACarouselViewDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9667C2641EEEDF5F00A46BCB;
+			productRefGroup = 9667C26E1EEEDF5F00A46BCB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9667C26C1EEEDF5F00A46BCB /* JACarouselViewDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9667C26B1EEEDF5F00A46BCB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9667C2801EEEDF5F00A46BCB /* LaunchScreen.storyboard in Resources */,
+				9667C2911EEEE01800A46BCB /* 6_welcome2@2x.png in Resources */,
+				9667C27D1EEEDF5F00A46BCB /* Assets.xcassets in Resources */,
+				9667C28F1EEEE01800A46BCB /* 4_welcome3@2x.png in Resources */,
+				9667C2921EEEE01800A46BCB /* 6_welcome3@2x.png in Resources */,
+				9667C2901EEEE01800A46BCB /* 6_welcome1@2x.png in Resources */,
+				9667C29C1EEEE07D00A46BCB /* Main.storyboard in Resources */,
+				9667C28D1EEEE01800A46BCB /* 4_welcome1@2x.png in Resources */,
+				9667C28E1EEEE01800A46BCB /* 4_welcome2@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3A0412605A6DEEFBEAC1D005 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JACarouselViewDemo/Pods-JACarouselViewDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		627F97845B2E42D013C6FBF4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C4F2E7EA31EEFA6A0ED00158 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JACarouselViewDemo/Pods-JACarouselViewDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9667C2691EEEDF5F00A46BCB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9667C2781EEEDF5F00A46BCB /* ViewController.m in Sources */,
+				9667C2751EEEDF5F00A46BCB /* AppDelegate.m in Sources */,
+				9667C29A1EEEE03600A46BCB /* GuideViewController.m in Sources */,
+				9667C2971EEEE02F00A46BCB /* BannerViewController.m in Sources */,
+				9667C2721EEEDF5F00A46BCB /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9667C27E1EEEDF5F00A46BCB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9667C27F1EEEDF5F00A46BCB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9667C2821EEEDF5F00A46BCB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9667C2831EEEDF5F00A46BCB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9667C2851EEEDF5F00A46BCB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53307E085D43AFCD916ACE62 /* Pods-JACarouselViewDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ZEY359R7A4;
+				INFOPLIST_FILE = JACarouselViewDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.coder.JACarouselViewDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9667C2861EEEDF5F00A46BCB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BEB2D274F118ABED13F42191 /* Pods-JACarouselViewDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ZEY359R7A4;
+				INFOPLIST_FILE = JACarouselViewDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.coder.JACarouselViewDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9667C2681EEEDF5F00A46BCB /* Build configuration list for PBXProject "JACarouselViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9667C2821EEEDF5F00A46BCB /* Debug */,
+				9667C2831EEEDF5F00A46BCB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9667C2841EEEDF5F00A46BCB /* Build configuration list for PBXNativeTarget "JACarouselViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9667C2851EEEDF5F00A46BCB /* Debug */,
+				9667C2861EEEDF5F00A46BCB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9667C2651EEEDF5F00A46BCB /* Project object */;
+}

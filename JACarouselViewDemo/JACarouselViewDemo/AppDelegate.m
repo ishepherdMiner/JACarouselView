@@ -1,8 +1,8 @@
 //
 //  AppDelegate.m
-//  JACarouselView
+//  JACarouselViewDemo
 //
-//  Created by Jason on 06/06/2017.
+//  Created by Jason on 12/06/2017.
 //  Copyright © 2017 Jason. All rights reserved.
 //
 

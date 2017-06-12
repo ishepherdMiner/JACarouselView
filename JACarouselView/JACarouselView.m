@@ -46,15 +46,6 @@
     self.type = JACarouselTypeBanner;
 }
 
-- (void)addBitImage {
-    if (self.bitImage) {
-        UIImageView *bitImageView = [[UIImageView alloc] initWithImage:_bitImage];
-        bitImageView.frame = self.bounds;
-        bitImageView.contentMode = UIViewContentModeScaleAspectFill;
-        [self addSubview:_bitImageView = bitImageView];
-    }
-}
-
 - (UIScrollView *)scrollView {
     if (_scrollView == nil) {
         _scrollView = [[UIScrollView alloc] init];
@@ -120,8 +111,12 @@
             NSString *placeHolderPath = [imagesBundle pathForResource:@"holder@2x" ofType:@"png"];
             NSData *placeHodlerData = [NSData dataWithContentsOfURL:[NSURL fileURLWithPath:placeHolderPath]];
             self.bitImage = [UIImage imageWithData:placeHodlerData];
+            
+            UIImageView *bitImageView = [[UIImageView alloc] initWithImage:self.bitImage];
+            bitImageView.frame = self.bounds;
+            bitImageView.contentMode = UIViewContentModeScaleAspectFill;
+            [self addSubview:_bitImageView = bitImageView];
         }
-        [self addBitImage];
         [self reloadData];
     }else {
         [self stop];
@@ -164,7 +159,7 @@
             [cell addObserver:self forKeyPath:@"imageView.image" options:NSKeyValueObservingOptionNew context:NULL];
         }
         
-        [self.bitImageView removeFromSuperview];
+        // [self.bitImageView removeFromSuperview];
         if (self.type == JACarouselTypeBanner) {
             JACarouselViewCell *firstCell = [self.dataSource carouselView:self cellForCol:0];
             [self setCellFrame:firstCell withCol:_cols];
@@ -180,7 +175,7 @@
         // 否则_cols值就不对了,因此加了这句话。
         [self setNeedsLayout];
         
-        if ([self canAutoPlay]) {
+        if ([self canAutoPlay] && self.bitImageView.image == nil) {
             [self fire];
         }
     });
@@ -220,7 +215,12 @@
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context {
     if ([object valueForKeyPath:@"imageView.image"]) {
         if (self.bitImageView) {
-            [self.bitImageView removeFromSuperview];
+            [UIView animateWithDuration:0.5 animations:^{
+                self.bitImageView.alpha = 0.0;
+            } completion:^(BOOL finished) {
+                [self.bitImageView removeFromSuperview];
+                self.bitImageView.image = nil;
+            }];
         }
     }
 }
