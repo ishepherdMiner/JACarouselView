@@ -28,7 +28,7 @@
 
 @implementation JACarouselView
 
-#pragma mark - 生命周期
+#pragma mark - Life Cycle
 - (instancetype)initWithFrame:(CGRect)frame {
     if (self = [super initWithFrame:frame]) {
         [self initUI];
@@ -105,17 +105,17 @@
     [super willMoveToSuperview:newSuperview];
     if (newSuperview) {
         // 1
-        if (self.bitImage == nil && self.type != JACarouselTypeGuide) {
+        if (_bitImage == nil && self.type != JACarouselTypeGuide) {
             NSString *imagesBundlePath = [[NSBundle mainBundle] pathForResource:@"JACarouselView" ofType:@"bundle"];
             NSBundle *imagesBundle = [NSBundle bundleWithPath:imagesBundlePath];
             NSString *placeHolderPath = [imagesBundle pathForResource:@"holder@2x" ofType:@"png"];
             NSData *placeHodlerData = [NSData dataWithContentsOfURL:[NSURL fileURLWithPath:placeHolderPath]];
-            self.bitImage = [UIImage imageWithData:placeHodlerData];
+            _bitImage = [UIImage imageWithData:placeHodlerData];
             
-            UIImageView *bitImageView = [[UIImageView alloc] initWithImage:self.bitImage];
-            bitImageView.frame = self.bounds;
-            bitImageView.contentMode = UIViewContentModeScaleAspectFill;
-            [self addSubview:_bitImageView = bitImageView];
+            _bitImageView = [[UIImageView alloc] initWithImage:_bitImage];
+            _bitImageView.frame = self.bounds;
+            _bitImageView.contentMode = UIViewContentModeScaleAspectFill;
+            [self addSubview:_bitImageView];
         }
         [self reloadData];
     }else {
@@ -155,11 +155,14 @@
         for (int i = 0; i < _cols; ++i) {
             JACarouselViewCell *cell = [self createCellWithCol:i];
             [_scrollView addSubview:cell];
-            
-            [cell addObserver:self forKeyPath:@"imageView.image" options:NSKeyValueObservingOptionNew context:NULL];
+            if (cell.imageView.image) {
+                [self.bitImageView removeFromSuperview];
+            }else {
+                [cell addObserver:self forKeyPath:@"imageView.image" options:NSKeyValueObservingOptionNew context:NULL];
+            }
         }
         
-        // [self.bitImageView removeFromSuperview];
+        
         if (self.type == JACarouselTypeBanner) {
             JACarouselViewCell *firstCell = [self.dataSource carouselView:self cellForCol:0];
             [self setCellFrame:firstCell withCol:_cols];
@@ -175,7 +178,7 @@
         // 否则_cols值就不对了,因此加了这句话。
         [self setNeedsLayout];
         
-        if ([self canAutoPlay] && self.bitImageView.image == nil) {
+        if ([self canAutoPlay] && self.bitImageView.superview == nil) {
             [self fire];
         }
     });
@@ -208,18 +211,26 @@
         CGRect frame = {CGPointMake(col * width, 0),{width,height}};
         cell.frame = frame;
     }
-    
+}
+
+- (void)setBitImage:(UIImage *)bitImage {
+    _bitImage = bitImage;
+    _bitImageView = [[UIImageView alloc] initWithImage:self.bitImage];
+    _bitImageView.frame = self.bounds;
+    _bitImageView.contentMode = UIViewContentModeScaleAspectFill;
+    [self addSubview:_bitImageView];
 }
 
 #pragma mark - KVO
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context {
     if ([object valueForKeyPath:@"imageView.image"]) {
         if (self.bitImageView) {
+            [self setNeedsLayout];
+            [self fire];
             [UIView animateWithDuration:0.5 animations:^{
                 self.bitImageView.alpha = 0.0;
             } completion:^(BOOL finished) {
-                [self.bitImageView removeFromSuperview];
-                self.bitImageView.image = nil;
+                [self.bitImageView removeFromSuperview];                
             }];
         }
     }
