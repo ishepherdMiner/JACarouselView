@@ -128,7 +128,7 @@
     [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
-#pragma mark - 数据刷新
+#pragma mark - Refresh
 - (void)reloadData {
     // 3
     if (self.dataSource == nil) {return;}
@@ -230,7 +230,7 @@
             [UIView animateWithDuration:0.5 animations:^{
                 self.bitImageView.alpha = 0.0;
             } completion:^(BOOL finished) {
-                [self.bitImageView removeFromSuperview];                
+                [self.bitImageView removeFromSuperview];
             }];
         }
     }
