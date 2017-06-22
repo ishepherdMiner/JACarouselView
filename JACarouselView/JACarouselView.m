@@ -108,9 +108,8 @@
         if (_bitImage == nil && self.type != JACarouselTypeGuide) {
             NSString *imagesBundlePath = [[NSBundle mainBundle] pathForResource:@"JACarouselView" ofType:@"bundle"];
             NSBundle *imagesBundle = [NSBundle bundleWithPath:imagesBundlePath];
-            NSString *placeHolderPath = [imagesBundle pathForResource:@"holder@2x" ofType:@"png"];
-            NSData *placeHodlerData = [NSData dataWithContentsOfURL:[NSURL fileURLWithPath:placeHolderPath]];
-            _bitImage = [UIImage imageWithData:placeHodlerData];
+            NSString *placeHolderPath = [imagesBundle pathForResource:@"holder@2x" ofType:@"png"];            
+            _bitImage = [UIImage imageWithContentsOfFile:placeHolderPath];;
             
             _bitImageView = [[UIImageView alloc] initWithImage:_bitImage];
             _bitImageView.frame = self.bounds;
