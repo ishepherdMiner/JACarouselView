@@ -181,7 +181,7 @@
 				TargetAttributes = {
 					9667C26C1EEEDF5F00A46BCB = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = ZEY359R7A4;
+						DevelopmentTeam = W49XAY8UZ2;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -393,7 +393,7 @@
 			baseConfigurationReference = 53307E085D43AFCD916ACE62 /* Pods-JACarouselViewDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = ZEY359R7A4;
+				DEVELOPMENT_TEAM = W49XAY8UZ2;
 				INFOPLIST_FILE = JACarouselViewDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -407,7 +407,7 @@
 			baseConfigurationReference = BEB2D274F118ABED13F42191 /* Pods-JACarouselViewDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = ZEY359R7A4;
+				DEVELOPMENT_TEAM = W49XAY8UZ2;
 				INFOPLIST_FILE = JACarouselViewDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

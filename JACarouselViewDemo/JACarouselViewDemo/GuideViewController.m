@@ -8,7 +8,6 @@
 
 #import "GuideViewController.h"
 #import "JACarouselView.h"
-#import "JACarouselViewCell.h"
 
 @interface GuideViewController () <JACarouselDelegate,JACarouselDatasource>
 

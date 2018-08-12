@@ -8,7 +8,6 @@
 
 #import "ViewController.h"
 #import "JACarouselView.h"
-#import "JACarouselViewCell.h"
 #import "BannerViewController.h"
 #import "GuideViewController.h"
 

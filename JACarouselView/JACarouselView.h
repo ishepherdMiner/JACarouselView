@@ -12,7 +12,18 @@ NS_ASSUME_NONNULL_BEGIN
 
 @protocol JACarouselDelegate,JACarouselDatasource;
 
-@class JACarouselView,JACarouselViewCell;
+@class JACarouselView;
+
+@interface JACarouselViewCell : UIView
+
+@property (nonatomic,strong,readonly) UIImageView *imageView;
+
+@property (nonatomic,strong) UIImage *eleImg;
+@property (nonatomic,copy) void (^clickBlock)(void);
+
+// @property (nonatomic,copy) IBInspectable NSString *identifier;
+
+@end
 
 typedef NS_ENUM(NSUInteger,JACarouselType) {
     JACarouselTypeBanner,  // Banner 可以滚动

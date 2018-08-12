@@ -8,7 +8,6 @@
 
 #import "BannerViewController.h"
 #import <JACarouselView.h>
-#import <JACarouselViewCell.h>
 #import <UIImageView+WebCache.h>
 
 @interface BannerViewController () <JACarouselDelegate,JACarouselDatasource>
