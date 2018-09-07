@@ -58,6 +58,7 @@ typedef NS_ENUM(NSUInteger,JACarouselType) {
 
 @property (nonatomic,strong,readonly) UIScrollView *scrollView;
 @property (nonatomic,strong) UIPageControl *pageControl;
+@property (nonatomic,assign) int pagePos;
 @property (nonatomic,weak) id<JACarouselDatasource> dataSource;
 @property (nonatomic,weak) id<JACarouselDelegate> delegate;
 @property (nonatomic,strong) UIImage *bitImage;

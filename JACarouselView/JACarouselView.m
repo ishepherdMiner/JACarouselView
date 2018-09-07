@@ -131,8 +131,13 @@
     }
     if (self.isHiddenPageControl == false) {
         [self pageControl];
-        // 排除x对center.x产生的影响
-        _pageControl.center = CGPointMake(self.center.x - self.frame.origin.x, self.frame.size.height - 10 + self.pageOffset.y);
+        if (self.pagePos == 0) {
+            // 排除x对center.x产生的影响
+            _pageControl.center = CGPointMake(self.center.x - self.frame.origin.x, self.frame.size.height - 10 + self.pageOffset.y);
+        }else if (self.pagePos == 1) {
+            /// 靠右
+            _pageControl.center = CGPointMake(CGRectGetMaxX(self.frame) - self.frame.origin.x - self.pageControl.frame.size.width - 20, self.frame.size.height - 10 + self.pageOffset.y);
+        }
         _pageControl.numberOfPages = _cols;
         
         if (self.type == JACarouselTypeBanner) {
@@ -182,26 +187,26 @@
 
     dispatch_async(dispatch_get_main_queue(), ^{        
         if ([self.dataSource respondsToSelector:@selector(numberOfColInCarouselView:)]) {
-            _cols = [self.dataSource numberOfColInCarouselView:self];
+            self.cols = [self.dataSource numberOfColInCarouselView:self];
         }
         
-        if(_cols == 0) {return;}
+        if(self.cols == 0) {return;}
         
         // 避免重复添加
         __block NSUInteger cols = 0;
-        [_scrollView.subviews enumerateObjectsUsingBlock:^(__kindof UIView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        [self.scrollView.subviews enumerateObjectsUsingBlock:^(__kindof UIView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
             if ([obj isKindOfClass:[JACarouselViewCell class]]) {
                 cols++;
             }
         }];
         CGFloat extraCellNums = self.type == JACarouselTypeBanner ? 2 : 0;
-        if (cols >= _cols + extraCellNums) {return;}
+        if (cols >= self.cols + extraCellNums) {return;}
         
         [self allCheckerDataSource];
         
-        for (int i = 0; i < _cols; ++i) {
+        for (int i = 0; i < self.cols; ++i) {
             JACarouselViewCell *cell = [self createCellWithCol:i];
-            [_scrollView addSubview:cell];
+            [self.scrollView addSubview:cell];
             if (cell.imageView.image) {
                 [self.bitImageView removeFromSuperview];
             }else {
@@ -212,12 +217,12 @@
         
         if (self.type == JACarouselTypeBanner) {
             JACarouselViewCell *firstCell = [self.dataSource carouselView:self cellForCol:0];
-            [self setCellFrame:firstCell withCol:_cols];
-            [_scrollView addSubview:firstCell];
+            [self setCellFrame:firstCell withCol:self.cols];
+            [self.scrollView addSubview:firstCell];
             
             JACarouselViewCell *lastCell = [self.dataSource carouselView:self cellForCol:_cols - 1];
             [self setCellFrame:lastCell withCol:-1];
-            [_scrollView addSubview:lastCell];
+            [self.scrollView addSubview:lastCell];
         }
         // 实际开发中,数据源开始时一般为空,等网络请求后才获得数据源，
         // 先add 走了 setLayoutSubview
