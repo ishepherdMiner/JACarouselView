@@ -119,12 +119,18 @@
     _scrollView.frame = self.bounds;
 
     if (self.type == JACarouselTypeBanner) {
-        
         _scrollView.contentSize = CGSizeMake((_cols + 2) * _scrollView.frame.size.width,_scrollView.frame.size.height);
         _scrollView.contentOffset = CGPointMake(_scrollView.frame.size.width, 0);
         
-    }else if (self.type == JACarouselTypeGuide) {
+//        if (_cols > 1) {
+//            _scrollView.contentSize = CGSizeMake((_cols + 2) * _scrollView.frame.size.width,_scrollView.frame.size.height);
+//            _scrollView.contentOffset = CGPointMake(_scrollView.frame.size.width, 0);
+//        }else {
+//            _scrollView.contentSize = CGSizeMake(_scrollView.frame.size.width,_scrollView.frame.size.height);
+//            _scrollView.contentOffset = CGPointMake(0, 0);
+//        }
         
+    }else if (self.type == JACarouselTypeGuide) {
         _scrollView.contentSize = CGSizeMake(_cols * _scrollView.frame.size.width,_scrollView.frame.size.height);
         _scrollView.contentOffset = CGPointMake(0, 0);
         
@@ -216,13 +222,17 @@
         
         
         if (self.type == JACarouselTypeBanner) {
-            JACarouselViewCell *firstCell = [self.dataSource carouselView:self cellForCol:0];
-            [self setCellFrame:firstCell withCol:self.cols];
-            [self.scrollView addSubview:firstCell];
-            
-            JACarouselViewCell *lastCell = [self.dataSource carouselView:self cellForCol:_cols - 1];
-            [self setCellFrame:lastCell withCol:-1];
-            [self.scrollView addSubview:lastCell];
+//            if (self.cols > 1) {
+                JACarouselViewCell *firstCell = [self.dataSource carouselView:self cellForCol:0];
+                [self setCellFrame:firstCell withCol:self.cols];
+                [self.scrollView addSubview:firstCell];
+                
+                JACarouselViewCell *lastCell = [self.dataSource carouselView:self
+                                                                  cellForCol:self.cols - 1];
+
+                [self setCellFrame:lastCell withCol:-1];
+                [self.scrollView addSubview:lastCell];
+//            }
         }
         // 实际开发中,数据源开始时一般为空,等网络请求后才获得数据源，
         // 先add 走了 setLayoutSubview
@@ -273,12 +283,14 @@
     [self addSubview:_bitImageView];
 }
 
-#pragma mark - KVO
+#pragma mark - KVO -
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context {
     if ([object valueForKeyPath:@"imageView.image"]) {
         if (self.bitImageView) {
             [self setNeedsLayout];
-            [self fire];
+            if ([self canAutoPlay]) {
+                [self fire];
+            }
             [UIView animateWithDuration:0.5 animations:^{
                 self.bitImageView.alpha = 0.0;
             } completion:^(BOOL finished) {
@@ -355,12 +367,13 @@
 
 - (void)fire {
     if (self.isAutoPlay) {
-        if (_timeInterval == 0) {_timeInterval = 2;}
-        if (_timer == nil) {
-            _timer = [NSTimer scheduledTimerWithTimeInterval:_timeInterval target:self selector:@selector(exec) userInfo:nil repeats:true];
-            [[NSRunLoop currentRunLoop] addTimer:_timer forMode:NSRunLoopCommonModes];
+        if (self.cols > 1) {
+            if (_timeInterval == 0) {_timeInterval = 2;}
+            if (_timer == nil) {
+                _timer = [NSTimer timerWithTimeInterval:_timeInterval target:self selector:@selector(exec) userInfo:nil repeats:YES];;
+                [[NSRunLoop currentRunLoop] addTimer:_timer forMode:NSRunLoopCommonModes];
+            }
         }
-        
     }else {
         NSLog(@"You need be set autoPlay value equal to true");
     }
